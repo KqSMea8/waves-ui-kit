@@ -76,6 +76,9 @@ export const categories = {
     'icon-dotsvertical',
     'icon-triangleselectup',
     'icon-triangleselectdown',
+    'icon-triangleright',
+    'icon-check',
+    'icon-ledgermini',
   ],
   transactions: [
     'step-forward'

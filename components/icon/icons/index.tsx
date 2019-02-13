@@ -76,3 +76,6 @@ export { default as IconLockFilled } from './IconLockFilled';
 export { default as IconDotsVertical } from './IconDotsVertical';
 export { default as IconTriangleSelectUp } from './IconTriangleSelectUp';
 export { default as IconTriangleSelectDown } from './IconTriangleSelectDown';
+export { default as IconTriangleRight } from './IconTriangleRight';
+export { default as IconCheck } from './IconCheck';
+export { default as IconLedgerMini } from './IconLedgerMini';
