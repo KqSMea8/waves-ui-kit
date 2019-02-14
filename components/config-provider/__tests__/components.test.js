@@ -35,7 +35,6 @@ import Popconfirm from '../../popconfirm';
 import Popover from '../../popover';
 import Progress from '../../progress';
 import Radio from '../../radio';
-import Rate from '../../rate';
 import Select from '../../select';
 import Skeleton from '../../skeleton';
 import Slider from '../../slider';
@@ -327,7 +326,7 @@ describe('ConfigProvider', () => {
               avatar={
                 <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
               }
-              title="Ant Design"
+              title="Waves UI Kit"
               description="Ant Design, a design language for background applications, is refined by Ant UED Team"
             />
           </List.Item>
@@ -401,8 +400,6 @@ describe('ConfigProvider', () => {
       </div>
     ));
 
-    // Rate
-    testPair('Rate', props => <Rate {...props} />);
 
     // Select
     testPair('Select', props => (

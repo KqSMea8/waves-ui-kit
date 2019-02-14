@@ -79,6 +79,7 @@ export const categories = {
     'icon-ledgermini',
     'icon-keepermini',
     'down',
+    'calendar',
   ],
   transactions: [
     'step-forward',

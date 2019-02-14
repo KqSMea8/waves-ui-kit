@@ -479,8 +479,8 @@ describe('Menu', () => {
             Option 1
             <img
               style={{ width: 20 }}
-              alt="test"
-              src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+              alt="Waves UI Kit"
+              src="https://svgshare.com/i/BAT.svg"
             />
           </span>
         </Menu.Item>

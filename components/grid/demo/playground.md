@@ -97,12 +97,12 @@ ReactDOM.render(<App />, mountNode);
   background: #00A0E9;
   height: 120px;
   line-height: 120px;
-  font-size: 13px;
+  font-size: 17px;
 }
 #components-grid-demo-playground pre {
   background: #f9f9f9;
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 17px;
   padding: 8px 16px;
 }
 ````

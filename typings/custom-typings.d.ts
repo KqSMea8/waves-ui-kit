@@ -53,8 +53,6 @@ declare module 'rc-notification';
 
 declare module 'rc-dialog';
 
-declare module 'rc-rate';
-
 declare module 'rc-queue-anim';
 
 declare module 'rc-slider';

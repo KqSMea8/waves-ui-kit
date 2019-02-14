@@ -222,11 +222,11 @@ export default class Header extends React.Component {
             <Link to={utils.getLocalizedPathname('/', isZhCN)} id="logo">
               <img
                 alt="logo"
-                src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+                src="https://svgshare.com/i/BAT.svg"
               />
               <img
-                alt="Ant Design"
-                src="https://gw.alipayobjects.com/zos/rmsportal/DkKNubTaaVsKURhcVGkh.svg"
+                alt="Waves UI Kit"
+                src="https://svgshare.com/i/BB0.svg"
               />
               <Santa />
             </Link>
