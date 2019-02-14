@@ -16,7 +16,7 @@ Demonstration of validation configuration for form controls which are not shown 
 ````jsx
 import {
   Form, Select, InputNumber, Switch, Radio,
-  Slider, Button, Upload, Icon, Rate, Checkbox,
+  Slider, Button, Upload, Icon, Checkbox,
   Row, Col,
 } from 'antd';
 
@@ -161,17 +161,6 @@ class Demo extends React.Component {
                 <Col span={8}><Checkbox value="E">E</Checkbox></Col>
               </Row>
             </Checkbox.Group>
-          )}
-        </Form.Item>
-
-        <Form.Item
-          {...formItemLayout}
-          label="Rate"
-        >
-          {getFieldDecorator('rate', {
-            initialValue: 3.5,
-          })(
-            <Rate />
           )}
         </Form.Item>
 

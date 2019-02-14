@@ -15,7 +15,7 @@ const page1Data = [
     to: '/docs/spec/values',
     svgBg: (
       <svg
-        width="213px"
+        width="217px"
         height="303px"
         viewBox="0 0 213 303"
         stroke="none"

@@ -74,8 +74,8 @@ class Footer extends React.Component {
       content: (
         <div>
           <img
-            src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
-            alt="Ant Design"
+            src="https://svgshare.com/i/BAT.svg"
+            alt="Waves UI Kit"
           />
           <p>
             {messages['app.publish.greeting']}

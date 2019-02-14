@@ -447,7 +447,7 @@ exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
         <a
           style="margin-left:8px;font-size:12px"
         >
-          Collapse 
+          Collapse
           <i
             aria-label="icon: down"
             class="anticon anticon-down"
@@ -1492,7 +1492,7 @@ exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
               Log in
             </span>
           </button>
-          Or 
+          Or
           <a
             href=""
           >
@@ -2050,7 +2050,7 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
               />
             </span>
             <span>
-              I have read the 
+              I have read the
               <a
                 href=""
               >
@@ -2309,7 +2309,7 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
               <span
                 class="ant-calendar-range-picker-separator"
               >
-                 ~ 
+                 ~
               </span>
               <input
                 class="ant-calendar-range-picker-input"
@@ -2384,7 +2384,7 @@ exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] =
               <span
                 class="ant-calendar-range-picker-separator"
               >
-                 ~ 
+                 ~
               </span>
               <input
                 class="ant-calendar-range-picker-input"
@@ -3306,13 +3306,6 @@ exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
     <div
       class="ant-col-6 ant-form-item-label"
     >
-      <label
-        class=""
-        for="validate_other_rate"
-        title="Rate"
-      >
-        Rate
-      </label>
     </div>
     <div
       class="ant-col-14 ant-form-item-control-wrapper"

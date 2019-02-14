@@ -1,10 +1,10 @@
 <p align="center">
   <a href="http://ant.design">
-    <img width="200" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg">
+    <img width="200" src="https://svgshare.com/i/BAT.svg">
   </a>
 </p>
 
-<h1 align="center">Ant Design</h1>
+<h1 align="center">Waves UI Kit</h1>
 
 <div align="center">
 
