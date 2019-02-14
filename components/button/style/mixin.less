@@ -26,20 +26,18 @@
 .button-variant-primary(@color; @background) {
   .button-color(@color; @background; @background);
   text-shadow: @btn-text-shadow;
-  box-shadow: @btn-primary-shadow;
+  color: #fff;
 
   &:hover,
   &:focus {
-    .button-color(
-      @color; ~`colorPalette('@{background}', 5) `; ~`colorPalette('@{background}', 5) `
-    );
+    background-color: @submit-600;
+    color: #fff;
   }
 
   &:active,
   &.active {
-    .button-color(
-      @color; ~`colorPalette('@{background}', 7) `; ~`colorPalette('@{background}', 7) `
-    );
+    background-color: @submit-600;
+    color: #fff;
   }
 
   .button-disabled();
@@ -67,7 +65,9 @@
 .button-variant-danger(@color; @background; @border) {
   .button-color(@color; @background; @border);
   &:hover {
-    @error-600; @error-600; @error-600;
+    @error-600;
+    @error-600;
+    @error-600;
   }
   &:focus {
     .button-color(
@@ -114,7 +114,6 @@
     }
   }
 }
-
 // Base styles of buttons
 // --------------------------------------------------
 .btn() {
@@ -128,7 +127,6 @@
   white-space: nowrap;
   .button-size(@btn-height-base; @btn-padding-base; @font-size-base; @btn-border-radius-base);
   user-select: none;
-  transition: all 0.3s @ease-in-out;
   position: relative;
   box-shadow: @btn-shadow;
   > .@{iconfont-css-prefix} {
@@ -181,9 +179,9 @@
 }
 // dashed button style
 .btn-dashed() {
-  .button-variant-other(@btn-default-color, @btn-default-bg, @bordernone);}
+  .button-variant-other(@btn-default-color, @btn-default-bg, @bordernone);
+}
 // danger button style
 .btn-danger() {
   .button-variant-danger(@btn-danger-color, @btn-danger-bg, @btn-danger-border);
 }
-
