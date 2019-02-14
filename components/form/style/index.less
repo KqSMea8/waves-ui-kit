@@ -432,9 +432,11 @@ form {
 }
 
 .has-success {
+  .form-control-validation(@success-300; @success-300;);
+
   &.has-feedback .@{form-prefix-cls}-item-children-icon {
-    animation-name: diffZoomIn1 !important;
-    color: @success-color;
+    color: @success-300;
+    animation-name: diffZoomIn3 !important;
   }
 }
 

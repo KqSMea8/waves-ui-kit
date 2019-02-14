@@ -79,6 +79,7 @@ export const categories = {
     'icon-triangleright',
     'icon-check',
     'icon-ledgermini',
+    'icon-keepermini',
   ],
   transactions: [
     'step-forward'
