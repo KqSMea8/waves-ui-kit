@@ -56,11 +56,11 @@
     .iconfont-mixin();
     position: absolute;
     top: 50%;
-    right: @control-padding-horizontal - 1px;
+    right: 16px;
     line-height: 1;
     margin-top: -@font-size-sm / 2;
     transform-origin: 50% 50%;
-    color: @disabled-color;
+    color: @basic-200;
     font-size: @font-size-sm;
 
     & &-icon svg {
@@ -71,7 +71,6 @@
   &-selection {
     outline: none;
     user-select: none;
-
     box-sizing: border-box;
     display: block;
 
@@ -116,7 +115,7 @@
   }
 
   &-disabled {
-    color: @disabled-color;
+    color: @basic-500;
   }
 
   &-disabled &-selection {
@@ -416,12 +415,32 @@
   }
 }
 
+.ant-select-lg {
+  .@{select-prefix-cls}-dropdown {
+    &-menu {
+      &-item {
+        height: 54px;
+      }
+    }
+  }
+}
+
 .@{select-prefix-cls}-dropdown {
   .reset-component;
   // Fix select render lag of long text in chrome
   // https://github.com/ant-design/ant-design/issues/11456
   // https://github.com/ant-design/ant-design/issues/11843
   font-variant: initial;
+  background-color: @component-background;
+  box-shadow: 0 3px 4px 0 rgba(74, 87, 104, 0.1);
+  border-radius: 0 0 4px 4px;
+  box-sizing: border-box;
+  z-index: @zindex-dropdown;
+  left: -9999px;
+  top: -9999px;
+  position: absolute;
+  outline: none;
+  font-size: @font-size-base;
 
   &.slide-up-enter.slide-up-enter-active&-placement-bottomLeft,
   &.slide-up-appear.slide-up-appear-active&-placement-bottomLeft {
@@ -444,17 +463,6 @@
   &-hidden {
     display: none;
   }
-
-  background-color: @component-background;
-  box-shadow: @box-shadow-base;
-  border-radius: @border-radius-base;
-  box-sizing: border-box;
-  z-index: @zindex-dropdown;
-  left: -9999px;
-  top: -9999px;
-  position: absolute;
-  outline: none;
-  font-size: @font-size-base;
 
   &-menu {
     outline: none;
@@ -500,11 +508,11 @@
       transition: background 0.3s ease;
 
       &:hover {
-        background-color: @item-hover-bg;
+        background-color: @basic-50;
       }
 
       &:first-child {
-        border-radius: @border-radius-base @border-radius-base 0 0;
+        border-radius: 0;
       }
 
       &:last-child {
@@ -517,7 +525,7 @@
 
         &:hover {
           color: @disabled-color;
-          background-color: @component-background;
+          background-color: @basic-50;
           cursor: not-allowed;
         }
       }
@@ -525,21 +533,20 @@
       &-selected {
         &,
         &:hover {
-          background-color: @background-color-light;
-          font-weight: 600;
+          background-color: @basic-50;
           color: @text-color;
         }
       }
 
       &-active {
-        background-color: @item-active-bg;
+        background-color: @basic-50;
       }
 
       &-divider {
         height: 1px;
         margin: 1px 0;
         overflow: hidden;
-        background-color: @border-color-split;
+        background-color: @basic-200;
         line-height: 0;
       }
     }
