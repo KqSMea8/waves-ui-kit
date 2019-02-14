@@ -80,3 +80,5 @@ export { default as IconTriangleRight } from './IconTriangleRight';
 export { default as IconCheck } from './IconCheck';
 export { default as IconLedgerMini } from './IconLedgerMini';
 export { default as IconKeeperMini } from './IconKeeperMini';
+
+export { default as down } from './down';

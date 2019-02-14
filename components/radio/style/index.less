@@ -43,21 +43,7 @@
     box-shadow: 0 0 0 3px fade(@radio-dot-color, 8%);
   }
 
-  &-checked:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 1px solid @radio-dot-color;
-    content: '';
-    animation: antRadioEffect 0.36s ease-in-out;
-    animation-fill-mode: both;
-    visibility: hidden;
-  }
-
-  &:hover:after,
+  &:hover,
   .@{radio-prefix-cls}-wrapper:hover &:after {
     visibility: visible;
   }

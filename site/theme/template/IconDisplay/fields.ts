@@ -71,8 +71,6 @@ export const categories = {
     'icon-circleerrorfilled',
     'icon-trianglewarningfilled',
     'icon-lockfilled',
-
-
     'icon-dotsvertical',
     'icon-triangleselectup',
     'icon-triangleselectdown',
@@ -80,9 +78,10 @@ export const categories = {
     'icon-check',
     'icon-ledgermini',
     'icon-keepermini',
+    'down',
   ],
   transactions: [
-    'step-forward'
+    'step-forward',
   ],
 };
 
