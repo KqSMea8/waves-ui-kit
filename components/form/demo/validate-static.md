@@ -74,7 +74,7 @@ ReactDOM.render(
       hasFeedback
       validateStatus="success"
     >
-      <Input placeholder="I'm the content" id="success" />
+      <Input class="success" placeholder="HEY I'm the content" />
     </Form.Item>
 
     <Form.Item
