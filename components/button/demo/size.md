@@ -33,7 +33,7 @@ class ButtonSize extends React.Component {
         <br /><br />
     <Button type="primary" size={size}>Primary</Button>
     <Button size={size}>Default</Button>
-    <Button type="dashed" icon="icon-send" size={size}>Send</Button>
+    <Button type="wshadow" icon="icon-send" size={size}>Send</Button>
     <Button type="danger" size={size}>Danger</Button>
       </div>
     );
