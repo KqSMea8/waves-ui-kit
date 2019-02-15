@@ -161,6 +161,19 @@
 // primary button style
 .btn-primary() {
   .button-variant-primary(@btn-primary-color; @btn-primary-bg);
+  &-disabled,
+  &.disabled,
+  &[disabled] {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background: @basic-200;
+      border-color: @basic-200;
+      color: @standard-white;
+    }
+  }
 }
 // default button style
 .btn-default() {
@@ -186,6 +199,20 @@
     border-color: rgba(0, 0, 0, 0);
     box-shadow: 0 4px 7px 0 rgba(199, 210, 222, 0.6);
   }
+  &-disabled,
+  &.disabled,
+  &[disabled] {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background: @standard-white;
+      border-color: @standard-white;
+      color: @basic-200;
+      box-shadow: 0 1px 2px 0 rgba(199, 210, 222, 0.3);
+    }
+  }
 }
 // danger button style
 .btn-danger() {
@@ -195,5 +222,18 @@
     color: @standard-white;
     background: @error-600;
     border-color: rgba(0, 0, 0, 0);
+  }
+  &-disabled,
+  &.disabled,
+  &[disabled] {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background: @error-200;
+      border-color: rgba(0, 0, 0, 0);
+      color: @standard-white;
+    }
   }
 }
