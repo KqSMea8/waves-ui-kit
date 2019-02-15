@@ -31,14 +31,10 @@ class ButtonSize extends React.Component {
           <Radio.Button value="small">Small</Radio.Button>
         </Radio.Group>
         <br /><br />
-        <Button type="primary" size={size}>Primary</Button>
-        <Button size={size}>Normal</Button>
-        <Button type="dashed" size={size}>Dashed</Button>
-        <Button type="danger" size={size}>Danger</Button>
-        <br />
-        <Button type="primary" shape="circle" icon="download" size={size} />
-        <Button type="primary" shape="round" icon="download" size={size}>Download</Button>
-        <Button type="primary" icon="download" size={size}>Download</Button>
+    <Button type="primary" size={size}>Primary</Button>
+    <Button size={size}>Default</Button>
+    <Button type="dashed" icon="icon-send" size={size}>Send</Button>
+    <Button type="danger" size={size}>Danger</Button>
       </div>
     );
   }
@@ -46,3 +42,5 @@ class ButtonSize extends React.Component {
 
 ReactDOM.render(<ButtonSize />, mountNode);
 ````
+
+

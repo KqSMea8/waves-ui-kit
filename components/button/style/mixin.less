@@ -179,9 +179,21 @@
 }
 // dashed button style
 .btn-dashed() {
-  .button-variant-other(@btn-default-color, @btn-default-bg, @bordernone);
+  .button-variant-other(@basic-500, @btn-default-bg, @bordernone);
+  &:hover,
+  &:focus {
+    color: @basic-700;
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 7px 0 rgba(199, 210, 222, 0.6);
+  }
 }
 // danger button style
 .btn-danger() {
-  .button-variant-danger(@btn-danger-color, @btn-danger-bg, @btn-danger-border);
+  .button-variant-danger(@standard-white, @error-400, @btn-danger-border);
+  &:hover,
+  &:focus {
+    color: @standard-white;
+    background: @error-600;
+    border-color: rgba(0, 0, 0, 0);
+  }
 }

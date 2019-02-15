@@ -755,7 +755,7 @@ exports[`renders ./components/button/demo/multiple.md correctly 1`] = `
     type="button"
   >
     <span>
-      Actions 
+      Actions
     </span>
     <i
       aria-label="icon: down"
