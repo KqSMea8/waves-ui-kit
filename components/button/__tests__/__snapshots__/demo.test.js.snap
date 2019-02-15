@@ -19,11 +19,11 @@ exports[`renders ./components/button/demo/basic.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-interface"
+    class="ant-btn ant-btn-wshadow"
     type="button"
   >
     <span>
-      interface
+      wshadow
     </span>
   </button>
   <button
@@ -56,11 +56,11 @@ exports[`renders ./components/button/demo/block.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-interface ant-btn-block"
+    class="ant-btn ant-btn-wshadow ant-btn-block"
     type="button"
   >
     <span>
-      interface
+      wshadow
     </span>
   </button>
   <button
@@ -312,20 +312,20 @@ exports[`renders ./components/button/demo/disabled.md correctly 1`] = `
   </button>
   <br />
   <button
-    class="ant-btn ant-btn-interface"
+    class="ant-btn ant-btn-wshadow"
     type="button"
   >
     <span>
-      interface
+      wshadow
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-interface"
+    class="ant-btn ant-btn-wshadow"
     disabled=""
     type="button"
   >
     <span>
-      interface(disabled)
+      wshadow(disabled)
     </span>
   </button>
   <div
@@ -373,11 +373,11 @@ exports[`renders ./components/button/demo/ghost.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-interface ant-btn-background-ghost"
+    class="ant-btn ant-btn-wshadow ant-btn-background-ghost"
     type="button"
   >
     <span>
-      interface
+      wshadow
     </span>
   </button>
   <button
@@ -542,7 +542,7 @@ exports[`renders ./components/button/demo/icon.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-interface ant-btn-circle ant-btn-icon-only"
+    class="ant-btn ant-btn-wshadow ant-btn-circle ant-btn-icon-only"
     type="button"
   >
     <i
@@ -565,7 +565,7 @@ exports[`renders ./components/button/demo/icon.md correctly 1`] = `
     </i>
   </button>
   <button
-    class="ant-btn ant-btn-interface"
+    class="ant-btn ant-btn-wshadow"
     type="button"
   >
     <i
@@ -862,11 +862,11 @@ exports[`renders ./components/button/demo/size.md correctly 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-btn-interface ant-btn-lg"
+    class="ant-btn ant-btn-wshadow ant-btn-lg"
     type="button"
   >
     <span>
-      interface
+      wshadow
     </span>
   </button>
   <button

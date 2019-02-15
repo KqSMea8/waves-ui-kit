@@ -83,3 +83,4 @@ export { default as IconKeeperMini } from './IconKeeperMini';
 
 export { default as down } from './down';
 export { default as calendar } from './calendar';
+export { default as loading } from './loading';

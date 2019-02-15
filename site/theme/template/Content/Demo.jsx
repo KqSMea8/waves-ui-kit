@@ -128,10 +128,9 @@ export default class Demo extends React.Component {
       '',
     );
     const html = `<div id="container" style="padding: 24px"></div>
-
-    <script>
-      var mountNode = document.getElementById('container');
-    </script>`;
+<script>
+  var mountNode = document.getElementById('container');
+</script>`;
 
     const sourceCode = this.getSourceCode();
 
@@ -240,7 +239,6 @@ ${sourceCode.replace('mountNode', "document.getElementById('container')")}
         <section className={highlightClass} key="code">
           <div className="highlight">
             <div className="code-box-actions">
-              +
               {showRiddleButton ? (
                 <form
                   action="//riddle.alibaba-inc.com/riddles/define"

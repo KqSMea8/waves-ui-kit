@@ -80,15 +80,16 @@ export const categories = {
     'icon-keepermini',
     'down',
     'calendar',
+    'loading',
   ],
   transactions: [
     'step-forward',
   ],
 };
 
-// export interface Categories {
-//   direction: string[];
-//   transactions: string[];
-// }
-//
-// export type CategoriesKeys = keyof Categories;
+export interface Categories {
+  direction: string[];
+  transactions: string[];
+}
+
+export type CategoriesKeys = keyof Categories;

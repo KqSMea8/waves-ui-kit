@@ -11,7 +11,7 @@ title:
 
 ## en-US
 
-There are `primary` button, `default` button, `interface` button and `danger` button in antd.
+There are `primary` button, `default` button, `wshadow` button and `danger` button in antd.
 
 ````jsx
 import { Button } from 'antd';
@@ -20,7 +20,7 @@ ReactDOM.render(
   <div>
     <Button type="primary">Primary</Button>
     <Button>Default</Button>
-    <Button type="interface" icon="icon-send">Send</Button>
+    <Button type="wshadow" icon="icon-send">Send</Button>
     <Button type="danger">Danger</Button>
   </div>,
   mountNode

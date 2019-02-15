@@ -20,7 +20,7 @@ ReactDOM.render(
   <div>
     <Button type="primary" block>Primary</Button>
     <Button block>Default</Button>
-    <Button type="interface" block>interface</Button>
+    <Button type="wshadow" block>wshadow</Button>
     <Button type="danger" block>danger</Button>
   </div>,
   mountNode
