@@ -111,13 +111,6 @@ export default class Article extends React.Component {
             : props.utils.toReactComponent(
                 ['section', { className: 'markdown' }].concat(getChildren(description)),
               )}
-          {!content.toc || content.toc.length <= 1 || meta.toc === false ? null : (
-            <Affix className="toc-affix" offsetTop={16}>
-              {props.utils.toReactComponent(
-                ['ul', { className: 'toc' }].concat(getChildren(content.toc)),
-              )}
-            </Affix>
-          )}
           {this.getArticle(
             props.utils.toReactComponent(
               ['section', { className: 'markdown' }].concat(getChildren(content.content)),
