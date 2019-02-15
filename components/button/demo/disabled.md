@@ -24,8 +24,8 @@ ReactDOM.render(
     <Button>Default</Button>
     <Button disabled>Default(disabled)</Button>
     <br />
-    <Button type="wshadow">wshadow</Button>
-    <Button type="wshadow" disabled>wshadow(disabled)</Button>
+    <Button type="interface">interface</Button>
+    <Button type="interface" disabled>interface(disabled)</Button>
     <div style={{ padding: '8px 8px 0 8px', background: 'rgb(190, 200, 200)' }}>
       <Button ghost>Ghost</Button>
       <Button ghost disabled>Ghost(disabled)</Button>

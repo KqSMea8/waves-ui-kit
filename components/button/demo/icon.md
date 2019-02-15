@@ -16,16 +16,16 @@ import { Button } from 'antd';
 
 ReactDOM.render(
   <div>
-    <Button type="wshadow" icon="icon-send">Send</Button>
-    <Button type="wshadow" icon="icon-receive">Receive</Button>
-    <Button type="wshadow" icon="icon-download">Export</Button>
-    <Button type="wshadow" icon="icon-json">JSON</Button>
+    <Button type="interface" icon="icon-send">Send</Button>
+    <Button type="interface" icon="icon-receive">Receive</Button>
+    <Button type="interface" icon="icon-download">Export</Button>
+    <Button type="interface" icon="icon-json">JSON</Button>
 
-    <Button type="wshadow" icon="icon-send"></Button>
-    <Button type="wshadow" icon="icon-receive"></Button>
-    <Button type="wshadow" icon="icon-download"></Button>
-    <Button type="wshadow" icon="icon-json"></Button>
-    <Button type="wshadow" icon="icon-filter"></Button>
+    <Button type="interface" icon="icon-send"></Button>
+    <Button type="interface" icon="icon-receive"></Button>
+    <Button type="interface" icon="icon-download"></Button>
+    <Button type="interface" icon="icon-json"></Button>
+    <Button type="interface" icon="icon-filter"></Button>
   </div>,
   mountNode
 );

@@ -29,8 +29,8 @@ ReactDOM.render(
     <br />
     <Button shape="circle" icon="search" />
     <Button icon="search">Search</Button>
-    <Button type="wshadow" shape="circle" icon="search" />
-    <Button type="wshadow" icon="search">Search</Button>
+    <Button type="interface" shape="circle" icon="search" />
+    <Button type="interface" icon="search">Search</Button>
   </div>,
   mountNode
 );
