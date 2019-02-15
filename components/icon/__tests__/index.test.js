@@ -43,8 +43,8 @@ describe('Icon', () => {
 
   it('should support config global two-tone primary color', () => {
     const colors = ReactIcon.getTwoToneColors();
-    Icon.setTwoToneColor('#1890ff');
-    expect(Icon.getTwoToneColor()).toBe('#1890ff');
+    Icon.setTwoToneColor('#1f5af6');
+    expect(Icon.getTwoToneColor()).toBe('#1f5af6');
     const wrapper = render(<Icon type="check-circle" theme="twoTone" />);
     expect(wrapper).toMatchSnapshot();
     ReactIcon.setTwoToneColors(colors);

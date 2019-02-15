@@ -92,7 +92,7 @@ ReactDOM.render(
   white-space: nowrap;
   width: 100%;
   text-overflow: ellipsis;
-  font-size: 12px;
+  font-size: 13px;
 }
 .notes-month {
   text-align: center;
