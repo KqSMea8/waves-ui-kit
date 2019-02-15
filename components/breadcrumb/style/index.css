@@ -1,0 +1,39 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.ant-breadcrumb {
+  font-variant: tabular-nums;
+  font-feature-settings: 'tnum';
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.65);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 15px;
+}
+.ant-breadcrumb .anticon {
+  font-size: 15px;
+}
+.ant-breadcrumb a {
+  color: rgba(0, 0, 0, 0.45);
+  transition: color 0.3s;
+}
+.ant-breadcrumb a:hover {
+  color: #4a80ff;
+}
+.ant-breadcrumb > span:last-child {
+  color: rgba(0, 0, 0, 0.65);
+}
+.ant-breadcrumb > span:last-child .ant-breadcrumb-separator {
+  display: none;
+}
+.ant-breadcrumb-separator {
+  margin: 0 8px;
+  color: rgba(0, 0, 0, 0.45);
+}
+.ant-breadcrumb-link > .anticon + span {
+  margin-left: 4px;
+}

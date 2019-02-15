@@ -15,7 +15,7 @@ if (
 }
 /* @remove-on-es-build-end */
 
-export { default as Affix } from './affix';
+export { default as Affix } from '../affix';
 
 export { default as Anchor } from './anchor';
 
