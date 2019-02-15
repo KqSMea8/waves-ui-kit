@@ -21,8 +21,8 @@ ReactDOM.render(
     <Button type="primary">Primary</Button>
     <Button type="primary" disabled>Primary (disabled)</Button>
     <br />
-    <Button type="wshadow" icon="icon-send">Send</Button>
-    <Button type="wshadow" icon="icon-send" disabled>Send (disabled)</Button>
+    <Button type="interfaceBtn" icon="icon-send">Send</Button>
+    <Button type="interfaceBtn" icon="icon-send" disabled>Send (disabled)</Button>
         <br />
       <Button type="danger">Danger</Button>
       <Button type="danger" disabled>Danger (disabled)</Button>

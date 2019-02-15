@@ -1,17 +1,9 @@
 ---
 category: Components
 type: General
-title: Icon
+title: Icon pack
 toc: false
 ---
-
-Semantic vector graphics.
-
-## List of icons
-
-> Click the icon and copy the code.
-
-We are still adding two-tone icons right now.
 
 ```__react
 import IconDisplay from 'site/theme/template/IconDisplay';

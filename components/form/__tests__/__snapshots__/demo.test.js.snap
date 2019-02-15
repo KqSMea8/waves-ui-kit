@@ -758,7 +758,7 @@ exports[`renders ./components/form/demo/dynamic-form-item.md correctly 1`] = `
           class="ant-form-item-children"
         >
           <button
-            class="ant-btn ant-btn-dashed"
+            class="ant-btn ant-btn-default"
             style="width:60%"
             type="button"
           >

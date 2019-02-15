@@ -4,7 +4,6 @@ title:
   en-US: Size
 ---
 
-
 Ant Design supports a default button size as well as a large and small size.
 
 If a large or small button is desired, set the `size` property to either `large` or `small` respectively. Omit the `size` property for a button with the default size.
@@ -31,10 +30,10 @@ class ButtonSize extends React.Component {
           <Radio.Button value="small">Small</Radio.Button>
         </Radio.Group>
         <br /><br />
-    <Button type="primary" size={size}>Primary</Button>
-    <Button size={size}>Default</Button>
-    <Button type="wshadow" icon="icon-send" size={size}>Send</Button>
-    <Button type="danger" size={size}>Danger</Button>
+          <Button type="primary" size={size}>Primary</Button>
+          <Button type="default" size={size}>Default</Button>
+          <Button type="interfaceBtn" icon="icon-send" size={size}>Send</Button>
+          <Button type="danger" size={size}>Danger</Button>
       </div>
     );
   }

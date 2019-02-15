@@ -71,10 +71,10 @@ ReactDOM.render(
     <Button onClick={showConfirm}>
       Confirm
     </Button>
-    <Button onClick={showDeleteConfirm} type="dashed">
+    <Button onClick={showDeleteConfirm} type="default">
       Delete
     </Button>
-    <Button onClick={showPropsConfirm} type="dashed">
+    <Button onClick={showPropsConfirm} type="default">
       With extra props
     </Button>
   </div>,
