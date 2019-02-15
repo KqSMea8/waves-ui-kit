@@ -12,7 +12,7 @@ class Footer extends React.Component {
     this.lessLoaded = false;
 
     this.state = {
-      color: '#1890ff',
+      color: '#1f5af6',
     };
   }
 
@@ -383,7 +383,7 @@ class Footer extends React.Component {
                       '#A0D911',
                       '#52C41A',
                       '#13C2C2',
-                      '#1890FF',
+                      '#1f5af6',
                       '#2F54EB',
                       '#722ED1',
                       '#EB2F96',

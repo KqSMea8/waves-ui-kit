@@ -77,7 +77,7 @@ class App extends React.Component {
         </Button>
       </div>
     ),
-    filterIcon: filtered => <Icon type="search" style={{ color: filtered ? '#1890ff' : undefined }} />,
+    filterIcon: filtered => <Icon type="search" style={{ color: filtered ? '#1f5af6' : undefined }} />,
     onFilter: (value, record) => record[dataIndex].toString().toLowerCase().includes(value.toLowerCase()),
     onFilterDropdownVisibleChange: (visible) => {
       if (visible) {

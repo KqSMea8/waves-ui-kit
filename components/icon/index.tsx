@@ -17,7 +17,7 @@ import { getTwoToneColor, setTwoToneColor } from './twoTonePrimaryColor';
 
 // Initial setting
 ReactIcon.add(...Object.keys(allIcons).map(key => (allIcons as any)[key]));
-setTwoToneColor('#1890ff');
+setTwoToneColor('#1f5af6');
 let defaultTheme: ThemeType = 'outlined';
 let dangerousTheme: ThemeType | undefined = undefined;
 
