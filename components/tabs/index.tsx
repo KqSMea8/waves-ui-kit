@@ -96,7 +96,7 @@ export default class Tabs extends React.Component<TabsProps, any> {
       type = 'line',
       tabPosition,
       children,
-      animated = true,
+      animated = false,
       hideAdd,
     } = this.props;
     let { tabBarExtraContent } = this.props;

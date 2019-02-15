@@ -16,11 +16,10 @@ There are 12 `placement` options available.
 ````jsx
 import { Popover, Button } from 'antd';
 
-const text = <span>Title</span>;
+const text = <span>About Alias</span>;
 const content = (
   <div>
-    <p>Content</p>
-    <p>Content</p>
+    <p>An Alias is a nickname for your address. You can use an Alias instead of an address to make transactions.</p>
   </div>
 );
 

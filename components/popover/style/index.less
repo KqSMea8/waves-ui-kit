@@ -4,6 +4,7 @@
 @popover-prefix-cls: ~'@{ant-prefix}-popover';
 
 .@{popover-prefix-cls} {
+  max-width: 300px;
   .reset-component;
   position: absolute;
   top: 0;
@@ -68,15 +69,14 @@
   &-title {
     min-width: @popover-min-width;
     margin: 0; // reset heading margin
-    padding: 5px @padding-md 4px;
+    padding: 15px 15px 5px 15px;
     min-height: 32px;
-    border-bottom: 1px solid @border-color-split;
     color: @heading-color;
     font-weight: 500;
   }
 
   &-inner-content {
-    padding: 12px @padding-md;
+    padding: 0 15px 15px 15px;
     color: @popover-color;
   }
 
@@ -124,8 +124,8 @@
     bottom: @popover-distance - @popover-arrow-width + 2.2px;
     box-shadow: 3px 3px 7px fade(@black, 7%);
     border-top-color: transparent;
-    border-right-color: @popover-bg;
-    border-bottom-color: @popover-bg;
+    border-right-color: @popover-arrow-bg;
+    border-bottom-color: @popover-arrow-bg;
     border-left-color: transparent;
   }
   &-placement-top > &-content > &-arrow {
@@ -146,8 +146,8 @@
     box-shadow: -3px 3px 7px fade(@black, 7%);
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: @popover-bg;
-    border-left-color: @popover-bg;
+    border-bottom-color: @popover-arrow-bg;
+    border-left-color: @popover-arrow-bg;
   }
   &-placement-right > &-content > &-arrow {
     top: 50%;
@@ -165,10 +165,10 @@
   &-placement-bottomRight > &-content > &-arrow {
     top: @popover-distance - @popover-arrow-width + 2px;
     box-shadow: -2px -2px 5px fade(@black, 6%);
-    border-top-color: @popover-bg;
+    border-top-color: @popover-arrow-bg;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    border-left-color: @popover-bg;
+    border-left-color: @popover-arrow-bg;
   }
   &-placement-bottom > &-content > &-arrow {
     left: 50%;
@@ -186,8 +186,8 @@
   &-placement-leftBottom > &-content > &-arrow {
     right: @popover-distance - @popover-arrow-width + 2px;
     box-shadow: 3px -3px 7px fade(@black, 7%);
-    border-top-color: @popover-bg;
-    border-right-color: @popover-bg;
+    border-top-color: @popover-arrow-bg;
+    border-right-color: @popover-arrow-bg;
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
@@ -201,4 +201,136 @@
   &-placement-leftBottom > &-content > &-arrow {
     bottom: 12px;
   }
+
+
+  &-placement-rightTop {
+    .ant-popover-content {
+      position: relative;
+      border-left: 4px solid @popover-arrow-bg;
+      border-radius: 4px 4px 4px 4px;
+      .ant-popover-arrow {
+        left: -8px;
+      }
+    }
+  }
+  &-placement-right {
+    .ant-popover-content {
+      position: relative;
+      border-left: 4px solid @popover-arrow-bg;
+      border-radius: 4px 4px 4px 4px;
+      .ant-popover-arrow {
+        left: -7px;
+      }
+    }
+  }
+  &-placement-rightBottom {
+    .ant-popover-content {
+      position: relative;
+      border-left: 4px solid @popover-arrow-bg;
+      border-radius: 4px 4px 4px 4px;
+      .ant-popover-arrow {
+        left: -8px;
+      }
+    }
+  }
+
+
+  &-placement-leftTop {
+    .ant-popover-content {
+      position: relative;
+      border-right: 4px solid @popover-arrow-bg;
+      border-radius: 4px 4px 4px 4px;
+      .ant-popover-arrow {
+        right: -7px;
+      }
+    }
+  }
+  &-placement-left {
+    .ant-popover-content {
+      position: relative;
+      border-right: 4px solid @popover-arrow-bg;
+      border-radius: 4px 4px 4px 4px;
+      .ant-popover-arrow {
+        right: -7px;
+      }
+    }
+  }
+  &-placement-leftBottom {
+    .ant-popover-content {
+      position: relative;
+      border-right: 4px solid @popover-arrow-bg;
+      border-radius: 4px 4px 4px 4px;
+      .ant-popover-arrow {
+        right: -7px;
+      }
+    }
+  }
+
+
+
+  &-placement-topLeft {
+    .ant-popover-content {
+      position: relative;
+      border-bottom: 4px solid @popover-arrow-bg;
+      border-radius: 0 0 4px 4px;
+      .ant-popover-arrow {
+        bottom: -8px;
+      }
+    }
+  }
+  &-placement-top  {
+    .ant-popover-content {
+      position: relative;
+      border-bottom: 4px solid @popover-arrow-bg;
+      border-radius: 0 0 4px 4px;
+      .ant-popover-arrow {
+        bottom: -8px;
+      }
+    }
+  }
+  &-placement-topRight {
+    .ant-popover-content {
+      position: relative;
+      border-bottom: 4px solid @popover-arrow-bg;
+      border-radius: 0 0 4px 4px;
+      .ant-popover-arrow {
+        bottom: -8px;
+      }
+    }
+  }
+
+
+
+  &-placement-bottomLeft {
+    .ant-popover-content {
+      position: relative;
+      border-top: 4px solid @popover-arrow-bg;
+      border-radius: 4px;
+      .ant-popover-arrow {
+        top: -7px;
+      }
+    }
+  }
+  &-placement-bottom {
+    .ant-popover-content {
+      position: relative;
+      border-top: 4px solid @popover-arrow-bg;
+      border-radius: 4px;
+      .ant-popover-arrow {
+        top: -7px;
+      }
+    }
+  }
+  &-placement-bottomRight {
+    .ant-popover-content {
+      position: relative;
+      border-top: 4px solid @popover-arrow-bg;
+      border-radius: 4px;
+      .ant-popover-arrow {
+        top: -7px;
+      }
+    }
+  }
+
 }
+
