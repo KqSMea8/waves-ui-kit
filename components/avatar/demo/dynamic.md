@@ -16,8 +16,8 @@ For letter type Avatar, when the letters are too long to display, the font size 
 ````jsx
 import { Avatar, Button } from 'antd';
 
-const UserList = ['U', 'Lucy', 'Tom', 'Edward'];
-const colorList = ['#f56a00', '#7265e6', '#ffbf00', '#00a2ae'];
+const UserList = ['A', 'B', 'C', 'D'];
+const colorList = ['#39a12c', '#6a737b', '#e49616', '#008ca7'];
 
 class Autoset extends React.Component {
   constructor(props) {

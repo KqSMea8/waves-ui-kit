@@ -7,11 +7,12 @@
 .@{menu-prefix-cls} {
   .reset-component;
   outline: none;
+  font-size: @font-size-lg;
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
   list-style: none;
   box-shadow: @box-shadow-base;
-  color: @menu-item-color;
+  color: @info-500;
   background: @menu-bg;
   line-height: 0; // Fix display inline-block gap
   transition: background 0.3s, width 0.2s;
@@ -30,7 +31,7 @@
 
   &-item-group-title {
     color: @menu-item-group-title-color;
-    font-size: @font-size-base;
+    font-size: @font-size-lg;
     line-height: @line-height-base;
     padding: 8px 16px;
     transition: all 0.3s;
@@ -157,9 +158,10 @@
     transition: color 0.3s @ease-in-out, border-color 0.3s @ease-in-out,
       background 0.3s @ease-in-out, padding 0.15s @ease-in-out;
     .@{iconfont-css-prefix} {
-      min-width: 14px;
-      margin-right: 10px;
-      font-size: @font-size-base;
+      min-width: 28px;
+      margin-right: 7px;
+      vertical-align: -0.30em;
+      font-size: @top-menu-icons;
       transition: font-size 0.15s @ease-out, margin 0.3s @ease-in-out;
       + span {
         transition: opacity 0.3s @ease-in-out, width 0.3s @ease-in-out;
@@ -280,9 +282,9 @@
 
   &-horizontal {
     border: 0;
-    border-bottom: @border-width-base @border-style-base @border-color-split;
+    border-bottom: @border-width-base @border-style-base @basic-100;
     box-shadow: none;
-    line-height: 46px;
+    line-height: 70px;
     white-space: nowrap;
 
     > .@{menu-prefix-cls}-item,
@@ -291,13 +293,13 @@
       top: 1px;
       display: inline-block;
       vertical-align: bottom;
-      border-bottom: 2px solid transparent;
+      border-bottom: 1px solid transparent;
 
       &:hover,
       &-active,
       &-open,
       &-selected {
-        border-bottom: 2px solid @menu-highlight-color;
+        border-bottom: 1px solid @menu-highlight-color;
         color: @menu-highlight-color;
       }
     }
@@ -310,7 +312,7 @@
           color: @menu-highlight-color;
         }
         &:before {
-          bottom: -2px;
+          bottom: -1px;
         }
       }
       &-selected > a {
@@ -348,7 +350,7 @@
     .@{menu-prefix-cls}-item,
     .@{menu-prefix-cls}-submenu-title {
       padding: 0 16px;
-      font-size: @font-size-base;
+      font-size: @font-size-lg;
       line-height: @menu-item-height;
       height: @menu-item-height;
       margin-top: 4px;
@@ -497,6 +499,76 @@
       }
     }
   }
+}
+
+
+.left-menu {
+  background: @standard-white;
+  width: 70px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  bottom: 0;
+  display: block;
+  box-shadow: 1px 0 6px 0 rgba(182,184,189,0.2);
+}
+.code-box-demo .left-menu {
+  top: 42px;
+  left: 24px;
+  max-height: 400px;
+}
+
+.avatar-container {
+  margin: 15px auto 20px auto;
+  position: relative;
+  width: 40px;
+}
+.avatar-container .avatar-wrap {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  background: @basic-200;
+  border-radius: 50%;
+}
+.left-menu .navigation-menu {
+  margin-top: 5px;
+}
+.left-menu .menu-item {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto 5px auto;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.left-menu .menu-item:hover {
+  background: @basic-50;
+}
+.left-menu .menu-item.active {
+  background: @submit-400 !important;
+}
+.left-menu .menu-item a {
+  padding: 11px;
+  display: block;
+  color: @basic-700;
+}
+.left-menu .menu-item.active a {
+  color: #FFF;
+}
+.left-menu .menu-item icon {
+  height: 28px;
+  width: 28px;
+  color: #0b8235;
+}
+.left-menu .navigation-bottom {
+  margin-top: 40px;
+}
+
+
+.h400 {
+  min-height: 400px;
 }
 
 @import './dark';

@@ -35,11 +35,11 @@ class App extends React.Component {
 
   render() {
     const { userName } = this.state;
-    const suffix = userName ? <Icon type="close-circle" onClick={this.emitEmpty} /> : null;
+    const suffix = userName ? <Icon type="icon-close" onClick={this.emitEmpty} /> : null;
     return (
       <Input
         placeholder="Enter your username"
-        prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+        prefix={<Icon type="icon-search" style={{ color: 'rgb(155, 166, 178)' }} />}
         suffix={suffix}
         value={userName}
         onChange={this.onChangeUserName}
@@ -53,16 +53,13 @@ ReactDOM.render(<App />, mountNode);
 ````
 
 ````css
-.anticon-close-circle {
+.anticon-icon-close {
   cursor: pointer;
-  color: #ccc;
+  color: #9ba6b2;
   transition: color 0.3s;
   font-size: 13px;
 }
-.anticon-close-circle:hover {
-  color: #999;
-}
-.anticon-close-circle:active {
-  color: #666;
+.anticon-icon-close:hover {
+  color: #1f5af6;
 }
 ````

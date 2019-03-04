@@ -18,12 +18,12 @@ import { Avatar } from 'antd';
 
 ReactDOM.render(
   <div>
-    <Avatar icon="user" />
-    <Avatar>U</Avatar>
-    <Avatar>USER</Avatar>
-    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-    <Avatar style={{ color: '#f56a00', backgroundColor: '#fde3cf' }}>U</Avatar>
-    <Avatar style={{ backgroundColor: '#87d068' }} icon="user" />
+      <Avatar style={{ color: '#FFF', backgroundColor: '#39a12c' }}>A</Avatar>
+
+          <Avatar src="https://client.wavesplatform.com/img/assets/waves.svg" />
+          <Avatar src="https://client.wavesplatform.com/img/assets/bitcoin.svg" />
+          <Avatar src="https://client.wavesplatform.com/img/assets/euro.svg" />
+    <Avatar src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg08c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0JIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDAgMTAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DTxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQkuc3Qwe2ZpbGw6IzE2MjY0MDt9DQkuc3Qxe2ZpbGw6I0ZGRkZGRjt9DQkuc3Qye2ZpbGw6IzBBNTc2Qzt9DQkuc3Qze2ZpbGw6IzE1MjQzQzt9DQkuc3Q0e2ZpbGw6IzExMzM1MTt9DTwvc3R5bGU+DTxnPg0JPHRpdGxlPmxvZ28geGJidCAxMDB4MTAwPC90aXRsZT4NCTxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjUwLjYiIGN5PSI1MC40IiByPSI0OC44Ii8+DQk8Y2lyY2xlIGNsYXNzPSJzdDEiIGN4PSI1MC42IiBjeT0iNTAuNCIgcj0iNDYuMSIvPg0JPHBhdGggY2xhc3M9InN0MiIgZD0iTTgxLjMsODFjNi4yLTYuMiwxMC40LTE0LjIsMTItMjIuOWwtMjYuNiw4LjNMODEuMyw4MXoiLz4NCTxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik01MC42LDdDMzkuMSw3LDI4LjEsMTEuNiwyMCwxOS43bDQ2LjcsNDYuN2wyNi42LTguM2M0LjMtMjMuNi0xMS40LTQ2LjEtMzUtNTAuNEM1NS44LDcuMyw1My4yLDcsNTAuNiw3eiIvPg0JPHBhdGggY2xhc3M9InN0MCIgZD0iTTIwLDgxYzE2LjksMTcsNDQuMywxNyw2MS4zLDBsMCwwTDY2LjcsNjYuNEwyMCw4MXoiLz4NCTxwYXRoIGNsYXNzPSJzdDQiIGQ9Ik0yMCwxOS43QzMsMzYuNywzLDY0LjEsMjAsODFsMCwwbDQ2LjctMTQuNkwyMCwxOS43eiIvPg0JPGNpcmNsZSBjbGFzcz0ic3QxIiBjeD0iNzYuNiIgY3k9IjQ4LjciIHI9IjkuNyIvPg0JPGNpcmNsZSBjbGFzcz0ic3QxIiBjeD0iMzcuOSIgY3k9IjMxLjQiIHI9IjUuOCIvPg0JPGNpcmNsZSBjbGFzcz0ic3QxIiBjeD0iNDEuMiIgY3k9IjY4IiByPSIxMy42Ii8+DQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNDguMiw3MC4xYzkuOC01LjIsMjAuNS04LDI5LjMtMTVjMi4zLTEuOCwxLjktNS43LDAtNy42Yy0yLjItMi4yLTUuMy0xLjgtNy42LDBjLTcuOCw2LjMtMTguMyw4LjctMjcuMSwxMy4zDQkJQzM2LjYsNjQsNDIsNzMuNCw0OC4yLDcwLjF6Ii8+DQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNzUuNyw0My42Yy0xMS42LTMuNS0yMi45LTcuOC0zMy45LTEzYy0yLjctMS4zLTUsMi43LTIuMyw0YzExLjMsNS40LDIzLDkuOSwzNSwxMy41DQkJQzc3LjQsNDksNzguNiw0NC41LDc1LjcsNDMuNkw3NS43LDQzLjZ6Ii8+DQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzYuMywzMy4zYzAuNiwxMS44LDAuOSwyMy43LDAuOSwzNS41YzAsMyw0LjYsMyw0LjYsMGMwLTExLjktMC4zLTIzLjctMC45LTM1LjUNCQlDNDAuOCwzMC4zLDM2LjIsMzAuMywzNi4zLDMzLjN6Ii8+DTwvZz4NPC9zdmc+DQ==" />
   </div>,
   mountNode
 );

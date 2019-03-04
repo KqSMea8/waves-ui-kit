@@ -81,6 +81,7 @@ export const categories = {
     'down',
     'calendar',
     'loading',
+    'icon-procent',
   ],
   transactions: [
     'step-forward',
