@@ -14,10 +14,7 @@ if (
   );
 }
 /* @remove-on-es-build-end */
-
 export { default as Affix } from './affix';
-
-export { default as Anchor } from './anchor';
 
 export { default as AutoComplete } from './auto-complete';
 

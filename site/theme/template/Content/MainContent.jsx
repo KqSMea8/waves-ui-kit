@@ -21,6 +21,28 @@ function getActiveMenuItem(props) {
 }
 
 function getModuleData(props) {
+  const EXCLUDE = [
+    'affix',
+    'breadcrumb',
+    'form',
+    'inputnumber',
+    'mention',
+    'timepicker',
+    'cascader',
+    'inputnumber',
+    'transfer',
+    'treeselect',
+    'comment',
+    'carousel',
+    'card',
+    'calendar',
+    'list',
+    'tree',
+    'drawer',
+    'popconfirm',
+    'localeprovider',
+    'empty',
+  ];
   const { pathname } = props.location;
   const moduleName = /^\/?components/.test(pathname)
     ? 'components'
@@ -37,7 +59,7 @@ function getModuleData(props) {
       ? [...props.picked.components, ...props.picked['docs/react'], ...props.picked.changelog]
       : props.picked[moduleName];
   const excludedSuffix = utils.isZhCN(props.location.pathname) ? 'en-US.md' : 'zh-CN.md';
-  return moduleData.filter(({ meta }) => !meta.filename.endsWith(excludedSuffix));
+  return moduleData.filter(({ meta }) => !EXCLUDE.includes(typeof meta.title === 'string' && meta.title.toLowerCase()) && !meta.filename.endsWith(excludedSuffix));
 }
 
 function fileNameToPath(filename) {
