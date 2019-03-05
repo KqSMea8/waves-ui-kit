@@ -22,6 +22,7 @@ function getActiveMenuItem(props) {
 
 function getModuleData(props) {
   const EXCLUDE = [
+    'layout',
     'affix',
     'breadcrumb',
     'form',
@@ -42,6 +43,9 @@ function getModuleData(props) {
     'popconfirm',
     'localeprovider',
     'empty',
+    'timeline',
+    'steps',
+    'autocomplete',
   ];
   const { pathname } = props.location;
   const moduleName = /^\/?components/.test(pathname)

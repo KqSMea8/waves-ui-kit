@@ -32,7 +32,7 @@
     border: @border-width-base dashed @border-color-base;
     width: @upload-picture-card-size;
     height: @upload-picture-card-size;
-    border-radius: @border-radius-base;
+    border-radius: 50%;
     background-color: @background-color-light;
     text-align: center;
     cursor: pointer;
@@ -96,7 +96,7 @@
     p.@{upload-prefix-cls}-drag-icon {
       .@{iconfont-css-prefix} {
         font-size: 48px;
-        color: @primary-5;
+        color: @basic-500;
       }
       margin-bottom: 20px;
     }
@@ -112,9 +112,9 @@
     .@{iconfont-css-prefix}-plus {
       font-size: 30px;
       transition: all 0.3s;
-      color: @disabled-color;
+      color: @basic-500;
       &:hover {
-        color: @text-color-secondary;
+        color: @submit-400;
       }
     }
     &:hover .@{iconfont-css-prefix}-plus {
@@ -206,7 +206,7 @@
   &-picture-card {
     .@{upload-item} {
       padding: 8px;
-      border-radius: @border-radius-base;
+      border-radius: 50%;
       border: @border-width-base @upload-picture-card-border-style @border-color-base;
       height: 66px;
       position: relative;
@@ -309,6 +309,7 @@
       height: 100%;
       position: relative;
       overflow: hidden;
+      border-radius: 50%;
 
       &:before {
         content: ' ';

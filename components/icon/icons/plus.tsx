@@ -1,5 +1,5 @@
-const IconPlus = {
-  name: 'icon-plus',
+const plus = {
+  name: 'plus',
   theme: 'outline',
   icon: {
     tag: 'svg',
@@ -15,4 +15,4 @@ const IconPlus = {
   }
 };
 
-export default IconPlus;
+export default plus;

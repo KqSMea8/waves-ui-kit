@@ -100,7 +100,7 @@ export default class Alert extends React.Component<AlertProps, AlertState> {
           iconType = 'info-circle';
           break;
         case 'error':
-          iconType = 'close-circle';
+          iconType = 'icon-circleerrorfilled';
           break;
         case 'warning':
           iconType = 'exclamation-circle';

@@ -2,7 +2,7 @@
 order: 7
 title:
   zh-CN: 控制 ToolTip 的显示
-  en-US: Control visible of ToolTip
+  en-US: Slider
 ---
 
 ## zh-CN
@@ -11,10 +11,27 @@ title:
 
 ## en-US
 
-When `tooltipVisible` is `true`, ToolTip will show always, or ToolTip will not show anyway, even if dragging or hovering.
+Basic slider. When `range` is `true`, display as dual thumb mode. When `disable` is `true`, the slider will not be interactable.
 
 ````jsx
 import { Slider } from 'antd';
 
-ReactDOM.render(<Slider min={0} max={8} defaultValue={4} tooltipVisible />, mountNode);
+const marks = {
+0: '0',
+1: '1',
+2: '2',
+3: '3',
+4: '4',
+5: '5',
+6: '6',
+7: '7',
+8: '8',
+};
+
+ReactDOM.render(
+<div>
+  <Slider marks={marks} step={10} defaultValue={4} min={0} max={8} tooltipVisible />
+</div>,
+mountNode
+);
 ````

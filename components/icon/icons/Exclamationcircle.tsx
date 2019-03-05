@@ -1,6 +1,6 @@
-const IconTriangleWarningFilled = {
-  name: 'icon-trianglewarningfilled',
-  theme: 'outline',
+const Exclamationcircle = {
+  name: 'exclamation-circle',
+  theme: 'fill',
   icon: {
     tag: 'svg',
     attrs: { viewBox: '0 0 14 14' },
@@ -15,4 +15,4 @@ const IconTriangleWarningFilled = {
   }
 };
 
-export default IconTriangleWarningFilled;
+export default Exclamationcircle;

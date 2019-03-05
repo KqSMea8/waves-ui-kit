@@ -19,11 +19,6 @@ import { Alert } from 'antd';
 ReactDOM.render(
   <div>
     <Alert
-      message="Success Text"
-      description="Success Description Success Description Success Description"
-      type="success"
-    />
-    <Alert
       message="Info Text"
       description="Info Description Info Description Info Description Info Description"
       type="info"

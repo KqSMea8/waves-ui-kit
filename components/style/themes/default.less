@@ -1,5 +1,6 @@
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 @import '../color/colors';
+@import '../color/fonts';
 
 // The prefix to use on all css classes from ant.
 @ant-prefix: ant;
@@ -38,9 +39,7 @@
 @body-background: #fff;
 // Base background color for most components
 @component-background: #fff;
-@font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
-  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-  'Segoe UI Emoji', 'Segoe UI Symbol';
+@font-family: 'Roboto';
 @code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 @heading-color: @basic-900;
 @text-color: @basic-700;
@@ -54,6 +53,7 @@
 @font-size-base: 14px;
 @font-size-lg: 15px;
 @font-size-sm: 13px;
+@font-size-mini: 12px;
 @line-height-base: 1.5;
 @border-radius-base: 4px;
 @border-radius-sm: 2px;
@@ -107,6 +107,7 @@
 @border-color-inverse: @white;
 @border-width-base: 1px; // width of the border for a component
 @border-style-base: solid; // style of a components border
+@border-style-dashed: dashed; // style of a components border
 
 // Outline
 @outline-blur-size: 0;
@@ -124,13 +125,14 @@
 
 // Shadow
 @shadow-color: rgba(218, 225, 233, 0.5);
+@modalka-shadow-color: rgba(0, 0, 0, 0.25);
 @shadow-color-inverse: @component-background;
 @box-shadow-base: @shadow-1-down;
 @shadow-1-up: 0 -2px 8px @shadow-color;
 @shadow-1-down: 0 2px 8px @shadow-color;
 @shadow-1-left: -2px 0 8px @shadow-color;
 @shadow-1-right: 2px 0 8px @shadow-color;
-@shadow-2: 0 4px 12px @shadow-color;
+@shadow-2: 0 4px 12px @modalka-shadow-color;
 
 @bshadow: 0 2px 4px 0 @shadow-color;
 
@@ -587,7 +589,7 @@
 @statistic-title-font-size: @font-size-base;
 @statistic-content-font-size: 24px;
 @statistic-unit-font-size: 16px;
-@statistic-font-family: Tahoma, 'Helvetica Neue', @font-family;
+@statistic-font-family: @font-family;
 
 // Max <3
 
