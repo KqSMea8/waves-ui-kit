@@ -94,10 +94,10 @@ export default class Alert extends React.Component<AlertProps, AlertState> {
     if (!iconType) {
       switch (type) {
         case 'success':
-          iconType = 'check-circle';
+          iconType = 'icon-circlecheckfilled';
           break;
         case 'info':
-          iconType = 'info-circle';
+          iconType = 'icon-circlesubmit';
           break;
         case 'error':
           iconType = 'icon-circleerrorfilled';

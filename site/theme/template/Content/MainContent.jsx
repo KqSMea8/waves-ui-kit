@@ -46,6 +46,8 @@ function getModuleData(props) {
     'timeline',
     'steps',
     'autocomplete',
+    'table',
+    'statistic',
   ];
   const { pathname } = props.location;
   const moduleName = /^\/?components/.test(pathname)

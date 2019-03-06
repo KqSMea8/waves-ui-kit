@@ -9,9 +9,10 @@
 @alert-close-color: @text-color-secondary;
 @alert-close-hover-color: @icon-color-hover;
 
-
+.code-box-demo .ant-alert {
+  margin: 20px 0;
+}
 .ant-alert {
-
   &.ant-alert-info {
     .ant-alert-message {
       color: @basic-700;
@@ -36,7 +37,7 @@
     }
     &.ant-alert-warning {
       .ant-alert-message {
-        color: orange;
+        color: @warning-500;
       }
     }
     &.ant-alert-error {
@@ -46,10 +47,61 @@
     }
   }
 }
+.ant-alert-banner.ant-alert-success {
+  background: @success-400;
+  .ant-alert-message {
+    color: @standard-white;
+  }
+  .ant-alert-close-icon .anticon-close {
+    color: @standard-white;
+    transition: all 0.3s;
+    opacity: 0.7;
+  }
+  .ant-alert-close-icon .anticon-close:hover {
+    opacity: 1;
+  }
+  .ant-alert-icon {
+    color: #FFF;
+    position: initial;
+    margin-right: 5px;
+  }
+}
 .ant-alert-banner.ant-alert-error {
   background: @error-500;
   .ant-alert-message {
     color: @standard-white;
+  }
+  .ant-alert-close-icon .anticon-close {
+    color: @standard-white;
+    transition: all 0.3s;
+    opacity: 0.7;
+  }
+  .ant-alert-close-icon .anticon-close:hover {
+    opacity: 1;
+  }
+  .ant-alert-icon {
+    color: #FFF;
+    position: initial;
+    margin-right: 5px;
+  }
+}
+.ant-alert-banner.ant-alert-info {
+  background: @submit-300;
+  .ant-alert-message {
+    color: @standard-white;
+  }
+  .ant-alert-close-icon .anticon-close {
+    color: @standard-white;
+    transition: all 0.3s;
+    opacity: 0.7;
+  }
+  .ant-alert-close-icon .anticon-close:hover {
+    opacity: 1;
+  }
+  .ant-alert-icon {
+    color: #FFF;
+    position: initial;
+    margin-right: 5px;
   }
 }
 

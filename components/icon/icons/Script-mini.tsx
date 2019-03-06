@@ -1,5 +1,5 @@
-const IconScript = {
-  name: 'icon-script',
+const Scriptmini = {
+  name: 'script-mini',
   theme: 'outline',
   icon: {
     tag: 'svg',
@@ -15,4 +15,4 @@ const IconScript = {
   }
 };
 
-export default IconScript;
+export default Scriptmini;

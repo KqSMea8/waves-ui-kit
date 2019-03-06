@@ -1,6 +1,6 @@
 const IconCircleCheckFilled = {
   name: 'icon-circlecheckfilled',
-  theme: 'outline',
+  theme: 'fill',
   icon: {
     tag: 'svg',
     attrs: { viewBox: '0 0 14 14' },

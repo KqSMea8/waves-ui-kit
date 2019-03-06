@@ -1,6 +1,6 @@
 const IconCircleSubmit = {
   name: 'icon-circlesubmit',
-  theme: 'outline',
+  theme: 'fill',
   icon: {
     tag: 'svg',
     attrs: { viewBox: '0 0 14 14' },

@@ -3,6 +3,8 @@
 
 @progress-prefix-cls: ~'@{ant-prefix}-progress';
 
+
+
 .@{progress-prefix-cls} {
   .reset-component;
   display: inline-block;
@@ -94,13 +96,13 @@
 
   &-status-exception {
     .@{progress-prefix-cls}-bg {
-      background-color: @error-color;
+      background-color: @error-500;
     }
     .@{progress-prefix-cls}-text {
-      color: @error-color;
+      color: @error-500;
     }
     .@{progress-prefix-cls}-circle-path {
-      stroke: @error-color;
+      stroke: @error-500;
     }
   }
 
@@ -150,6 +152,12 @@
       color: @success-color;
     }
   }
+}
+.ant-progress-status-normal .ant-progress-inner {
+  background: @basic-100;
+}
+.ant-progress-status-exception .ant-progress-inner {
+  background: @error-100;
 }
 
 @keyframes ~"@{ant-prefix}-progress-active" {

@@ -19,26 +19,20 @@ import { Tag } from 'antd';
 
 ReactDOM.render(
   <div>
-    <h4 style={{ marginBottom: 16 }}>Presets:</h4>
+    <h4 style={{ marginBottom: 10 }}>Transaction status:</h4>
     <div>
-      <Tag color="magenta">magenta</Tag>
-      <Tag color="red">red</Tag>
-      <Tag color="volcano">volcano</Tag>
-      <Tag color="orange">orange</Tag>
-      <Tag color="gold">gold</Tag>
-      <Tag color="lime">lime</Tag>
-      <Tag color="green">green</Tag>
-      <Tag color="cyan">cyan</Tag>
-      <Tag color="blue">blue</Tag>
-      <Tag color="geekblue">geekblue</Tag>
-      <Tag color="purple">purple</Tag>
+      <Tag color="tcompleted">Completed</Tag>
+      <Tag color="tunconfirmed">Unconfirmed</Tag>
     </div>
-    <h4 style={{ margin: '16px 0' }}>Custom:</h4>
+    <h4 style={{ marginBottom: 10, marginTop: 20 }}>Portfolio:</h4>
     <div>
-      <Tag color="#f50">#f50</Tag>
-      <Tag color="#2db7f5">#2db7f5</Tag>
-      <Tag color="#87d068">#87d068</Tag>
-      <Tag color="#108ee9">#108ee9</Tag>
+      <Tag color="qualified">Qualified</Tag>
+      <Tag color="suspicious">Suspicious</Tag>
+    </div>
+    <h4 style={{ marginBottom: 10, marginTop: 20 }}>Leasing:</h4>
+    <div>
+      <Tag color="lactive">Active</Tag>
+      <Tag color="lcancelled">Canceled</Tag>
     </div>
   </div>,
   mountNode

@@ -27,11 +27,11 @@ const wrapStyles = {
 ReactDOM.render(
   <div style={wrapStyles}>
     <Tooltip placement="left" title="Prompt Text" getPopupContainer={trigger => trigger.parentElement}>
-      <Button>Adjust automatically / 自动调整</Button>
+      <Button>Adjust automatically / Автоматически</Button>
     </Tooltip>
     <br />
     <Tooltip placement="left" title="Prompt Text" getPopupContainer={trigger => trigger.parentElement} autoAdjustOverflow={false}>
-      <Button>Ingore / 不处理</Button>
+      <Button>Ingore / Игнорировать</Button>
     </Tooltip>
   </div>,
   mountNode

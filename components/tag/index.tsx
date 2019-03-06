@@ -83,7 +83,7 @@ class Tag extends React.Component<TagProps, TagState> {
     if (!color) {
       return false;
     }
-    return /^(pink|red|yellow|orange|cyan|green|blue|purple|geekblue|magenta|volcano|gold|lime)(-inverse)?$/.test(
+    return /^(pink|red|yellow|orange|cyan|green|blue|purple|geekblue|magenta|volcano|gold|lime|lactive|lcancelled|qualified|suspicious|tcompleted|tunconfirmed)(-inverse)?$/.test(
       color,
     );
   }

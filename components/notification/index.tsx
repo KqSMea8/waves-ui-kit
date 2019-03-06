@@ -101,10 +101,10 @@ function getNotificationInstance(
 }
 
 const typeToIcon = {
-  success: 'check-circle-o',
-  info: 'info-circle-o',
-  error: 'close-circle-o',
-  warning: 'exclamation-circle-o',
+  success: 'check-circle',
+  info: 'info-circle',
+  error: 'error-circle',
+  warning: 'warning-circle',
 };
 
 export interface ArgsProps {

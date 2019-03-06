@@ -20,13 +20,13 @@ const Line: React.SFC<LineProps> = props => {
   } = props;
   const percentStyle = {
     width: `${validProgress(percent)}%`,
-    height: strokeWidth || (size === 'small' ? 6 : 8),
+    height: strokeWidth || (size === 'small' ? 2 : 8),
     background: strokeColor,
     borderRadius: strokeLinecap === 'square' ? 0 : '100px',
   };
   const successPercentStyle = {
     width: `${validProgress(successPercent)}%`,
-    height: strokeWidth || (size === 'small' ? 6 : 8),
+    height: strokeWidth || (size === 'small' ? 2 : 8),
     borderRadius: strokeLinecap === 'square' ? 0 : '100px',
   };
   const successSegment =

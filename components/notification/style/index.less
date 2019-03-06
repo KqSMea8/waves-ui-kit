@@ -5,7 +5,7 @@
 @notification-width: 384px;
 @notification-padding-vertical: 16px;
 @notification-padding-horizontal: 24px;
-@notification-padding: @notification-padding-vertical @notification-padding-horizontal;
+@notification-padding: 20px;
 @notification-margin-bottom: 16px;
 
 .@{notification-prefix-cls} {
@@ -36,7 +36,7 @@
   &-notice {
     padding: @notification-padding;
     border-radius: @border-radius-base;
-    box-shadow: @shadow-2;
+    box-shadow: @shadow-notification;
     background: @component-background;
     line-height: 1.5;
     position: relative;
@@ -45,6 +45,7 @@
 
     &-message {
       font-size: @font-size-lg;
+      font-weight: 500;
       color: @heading-color;
       margin-bottom: 8px;
       line-height: 24px;
@@ -65,7 +66,7 @@
     }
 
     &-description {
-      font-size: @font-size-base;
+      font-size: @font-size-sm;
     }
 
     &-closable &-message {
@@ -80,13 +81,14 @@
 
     &-with-icon &-description {
       margin-left: 48px;
-      font-size: @font-size-base;
+      line-height: 18px;
+      font-size: @font-size-sm;
     }
 
     &-icon {
       position: absolute;
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 32px;
+      line-height: 32px;
       margin-left: 4px;
 
       &-success {

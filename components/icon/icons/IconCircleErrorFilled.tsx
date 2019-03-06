@@ -1,6 +1,6 @@
 const IconCircleErrorFilled = {
   name: 'icon-circleerrorfilled',
-  theme: 'outline',
+  theme: 'fill',
   icon: {
     tag: 'svg',
     attrs: { viewBox: '0 0 14 14' },
