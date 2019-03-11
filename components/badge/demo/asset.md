@@ -18,10 +18,10 @@ import { Badge, Icon } from 'antd';
 
 ReactDOM.render(
   <div>
-    <Badge count={<Icon type="icon-procent" style={{ color: '#FFF' }} />}>
+    <Badge count={<Icon type="icon-procent" style={{ color: '#FFF', background: '#00a500' }} />}>
       <a href="#" className="head-example-large" />
     </Badge>
-    <Badge count={<Icon type="icon-script" style={{ color: '#FFF' }} />}>
+    <Badge count={<Icon type="icon-script" style={{ color: '#FFF', background: '#00a500' }} />}>
     <a href="#" className="head-example-large" />
     </Badge>
   </div>,

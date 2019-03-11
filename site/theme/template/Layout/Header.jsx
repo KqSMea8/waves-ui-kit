@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'bisheng/router';
-import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
-import { Select, Menu, Row, Col, Icon, Popover, Input, Button } from 'antd';
+import { Select, Row, Col, Icon, Popover, Input } from 'antd';
 import Santa from './Santa';
 import * as utils from '../utils';
 import { version as antdVersion } from '../../../../package.json';
@@ -134,76 +133,14 @@ export default class Header extends React.Component {
     });
 
     const menu = [
-      <Button
-        ghost
-        size="small"
-        onClick={this.handleLangChange}
-        className="header-lang-button"
-        key="lang-button"
-      >
-        <FormattedMessage id="app.header.lang" />
-      </Button>,
-      <Select
-        key="version"
-        className="version"
-        size="small"
-        dropdownMatchSelectWidth={false}
-        defaultValue={antdVersion}
-        onChange={this.handleVersionChange}
-        getPopupContainer={trigger => trigger.parentNode}
-      >
-        {versionOptions}
-      </Select>,
-      <Menu
-        className="menu-site"
-        mode={menuMode}
-        selectedKeys={[activeMenuItem]}
-        id="nav"
-        key="nav"
-      >
-        <Menu.Item key="home" className="hide-in-home-page">
-          <Link to={utils.getLocalizedPathname('/', isZhCN)}>
-            <FormattedMessage id="app.header.menu.home" />
-          </Link>
-        </Menu.Item>
-        <Menu.Item key="docs/spec">
-          <Link to={utils.getLocalizedPathname('/docs/spec/introduce', isZhCN)}>
-            <FormattedMessage id="app.header.menu.spec" />
-          </Link>
-        </Menu.Item>
-        <Menu.Item key="docs/react">
-          <Link to={utils.getLocalizedPathname('/docs/react/introduce', isZhCN)}>
-            <FormattedMessage id="app.header.menu.components" />
-          </Link>
-        </Menu.Item>
-        <Menu.Item key="pro" className="hide-in-home-page">
-          <a
-            href="http://pro.ant.design"
-            className="header-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FormattedMessage id="app.header.menu.pro" />
-          </a>
-        </Menu.Item>
-        {isZhCN ? (
-          <Menu.Item key="course" className="hide-in-home-page">
-            <a
-              href="https://www.yuque.com/ant-design/course"
-              className="header-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              教程
-            </a>
-          </Menu.Item>
-        ) : null}
-      </Menu>,
+
     ];
 
-    const searchPlaceholder = locale === 'zh-CN' ? '在 ant.design 中搜索' : 'Search in ant.design';
+    const styles = activeMenuItem === 'home' ? { display: 'none' } : null;
+
+    const searchPlaceholder = locale === 'zh-CN' ? '在 ant.design 中搜索' : 'Search...';
     return (
-      <header id="header" className={headerClassName}>
+      <header id="header" className={headerClassName} style={styles}>
         {isMobile && (
           <Popover
             overlayClassName="popover-menu"
@@ -222,11 +159,7 @@ export default class Header extends React.Component {
             <Link to={utils.getLocalizedPathname('/', isZhCN)} id="logo">
               <img
                 alt="logo"
-                src="https://svgshare.com/i/BAT.svg"
-              />
-              <img
-                alt="Waves UI Kit"
-                src="https://svgshare.com/i/BB0.svg"
+                src="https://client.wavesplatform.com/img/icons/waves_logo.svg"
               />
               <Santa />
             </Link>

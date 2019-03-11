@@ -74,7 +74,7 @@ class Footer extends React.Component {
       content: (
         <div>
           <img
-            src="https://svgshare.com/i/BAT.svg"
+            src="https://client.wavesplatform.com/img/icons/waves_logo.svg"
             alt="Waves UI Kit"
           />
           <p>

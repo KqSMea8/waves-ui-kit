@@ -480,7 +480,7 @@ describe('Menu', () => {
             <img
               style={{ width: 20 }}
               alt="Waves UI Kit"
-              src="https://svgshare.com/i/BAT.svg"
+              src="https://client.wavesplatform.com/img/icons/waves_logo.svg"
             />
           </span>
         </Menu.Item>

@@ -62,9 +62,6 @@ export default class Layout extends React.Component {
   componentDidMount() {
     const { router } = this.context;
     router.listen(loc => {
-      if (typeof window.ga !== 'undefined') {
-        window.ga('send', 'pageview', loc.pathname + loc.search);
-      }
       // eslint-disable-next-line
       if (typeof window._hmt !== 'undefined') {
         // eslint-disable-next-line

@@ -32,7 +32,6 @@ function getModuleData(props) {
     'cascader',
     'inputnumber',
     'transfer',
-    'treeselect',
     'comment',
     'carousel',
     'card',
@@ -48,6 +47,7 @@ function getModuleData(props) {
     'autocomplete',
     'table',
     'statistic',
+    'treeselect',
   ];
   const { pathname } = props.location;
   const moduleName = /^\/?components/.test(pathname)

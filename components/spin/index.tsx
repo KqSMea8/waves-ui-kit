@@ -46,12 +46,7 @@ function renderIndicator(prefixCls: string, props: SpinProps): React.ReactNode {
   }
 
   return (
-    <span className={classNames(dotClassName, `${prefixCls}-dot-spin`)}>
-      <i />
-      <i />
-      <i />
-      <i />
-    </span>
+    <div className="preloader"></div>
   );
 }
 

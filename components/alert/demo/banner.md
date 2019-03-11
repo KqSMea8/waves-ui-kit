@@ -19,13 +19,13 @@ import { Alert } from 'antd';
 
 ReactDOM.render(
   <div>
-    <Alert message="Error text very long error text" banner closable />
+    <Alert message="Warning text very long warning text" banner closable />
     <br />
     <Alert type="error" message="Error text very long error text" banner closable />
     <br />
     <Alert type="info" message="Info text very long info text" banner closable />
     <br />
-    <Alert type="success" message="Info text very long info text" banner closable />
+    <Alert type="success" message="Success text very long success text" banner closable />
   </div>,
   mountNode
 );

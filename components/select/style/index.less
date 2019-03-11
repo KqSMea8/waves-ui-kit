@@ -105,8 +105,8 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      max-width: 100%;
-      padding-right: 20px;
+      width: 100%;
+      padding-right: 24px;
     }
   }
 
@@ -152,8 +152,8 @@
 
   &-selection__rendered {
     display: block;
-    margin-left: @control-padding-horizontal - 1px;
-    margin-right: @control-padding-horizontal - 1px;
+    margin-left: @control-padding-horizontal;
+    margin-right: @control-padding-horizontal;
     position: relative;
     line-height: @input-height-base - 2px;
     // https://github.com/ant-design/ant-design/issues/3481#issuecomment-254721026
@@ -589,4 +589,8 @@
       display: block;
     }
   }
+}
+
+.ant-select-selection-selected-value .picselected {
+  margin: 8px 0;
 }

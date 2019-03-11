@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://ant.design">
-    <img width="200" src="https://svgshare.com/i/BAT.svg">
+    <img width="200" src="https://client.wavesplatform.com/img/icons/waves_logo.svg">
   </a>
 </p>
 
