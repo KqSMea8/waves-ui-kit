@@ -57,7 +57,7 @@ class Home extends React.Component {
             <div className="left"></div>
             <div className="right">
               <div className="logo-wrp">
-                <div className="logo"><img src="https://svgur.com/i/Bey.svg" alt=""/></div>
+                <div className="logo"><img src="https://svgur.com/i/Bey.svg" alt="" /></div>
               </div>
               <div className="cont-wrp">
                 <div className="center">

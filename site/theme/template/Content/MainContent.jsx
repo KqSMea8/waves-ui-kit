@@ -80,7 +80,7 @@ const getSideBarOpenKeys = nextProps => {
   const moduleData = getModuleData(nextProps);
   const shouldOpenKeys = utils
     .getMenuItems(moduleData, locale, themeConfig.categoryOrder, themeConfig.typeOrder)
-    .map(m => (m.title && m.title[locale]) || m.title);
+    .map(m => (m.title && (m.title[locale] || m.title['en-US']) || m.title));
   return shouldOpenKeys;
 };
 
@@ -220,7 +220,7 @@ export default class MainContent extends Component {
     if (!item.title) {
       return null;
     }
-    const title = item.title[locale] || item.title;
+    const title = item.title && (item.title[locale] || item.title['en-US']) || item.title;
     const text = isTop
       ? title
       : [

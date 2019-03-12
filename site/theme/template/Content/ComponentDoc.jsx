@@ -65,7 +65,8 @@ export default class ComponentDoc extends React.Component {
 
     const jumper = showedDemo.map(demo => {
       const { title } = demo.meta;
-      const localizeTitle = title[locale] || title;
+      const localizeTitle = title && (title[locale] || title['en-US']) || title;
+
       return (
         <li key={demo.meta.id} title={localizeTitle}>
           <a href={`#${demo.meta.id}`}>{localizeTitle}</a>
@@ -75,7 +76,7 @@ export default class ComponentDoc extends React.Component {
 
     const { title, subtitle, filename } = meta;
     return (
-      <DocumentTitle title={`${subtitle || ''} ${title[locale] || title} - Ant Design`}>
+      <DocumentTitle title={`${subtitle || ''} ${title} - Ant Design`}>
         <article>
           <Affix className="toc-affix" offsetTop={16}>
             <ul id="demo-toc" className="toc">
@@ -84,7 +85,7 @@ export default class ComponentDoc extends React.Component {
           </Affix>
           <section className="markdown">
             <h1>
-              {title[locale] || title}
+              {title && (title[locale] || title['en-US']) || title}
               {!subtitle ? null : <span className="subtitle">{subtitle}</span>}
               <EditButton
                 title={<FormattedMessage id="app.content.edit-page" />}

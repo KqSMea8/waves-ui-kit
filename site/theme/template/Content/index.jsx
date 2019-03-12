@@ -20,7 +20,7 @@ export default collect(async nextProps => {
   const pageDataPromise =
     typeof pageData === 'function'
       ? pageData()
-      : (pageData[locale] || pageData.index[locale] || pageData.index)();
+      : (pageData && pageData[locale] || pageData.index && pageData.index[locale] || page.index)();
   const demosFetcher = nextProps.utils.get(nextProps.data, [...pageDataPath, 'demo']);
   if (demosFetcher) {
     const [localizedPageData, demos] = await Promise.all([pageDataPromise, demosFetcher()]);

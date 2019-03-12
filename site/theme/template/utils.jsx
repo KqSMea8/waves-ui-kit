@@ -6,7 +6,7 @@ export function getMenuItems(moduleData, locale, categoryOrder, typeOrder) {
     if (!meta.category) {
       menuItems.push(meta);
     } else {
-      const category = meta.category[locale] || meta.category;
+      const category = meta.category && meta.category[locale] || meta.category;
       let group = menuItems.filter(i => i.title === category)[0];
       if (!group) {
         group = {

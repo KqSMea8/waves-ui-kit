@@ -114,8 +114,8 @@ export default class Demo extends React.Component {
     const {
       intl: { locale },
     } = this.context;
-    const localizedTitle = meta.title[locale] || meta.title;
-    const localizeIntro = content[locale] || content;
+    const localizedTitle = meta.title && (meta.title[locale] || meta.title['en-US']) || meta.title;
+    const localizeIntro = content && (content[locale] || content['en-US']) || content;
     const introChildren = props.utils.toReactComponent(['div'].concat(localizeIntro));
 
     const highlightClass = classNames({
@@ -128,9 +128,10 @@ export default class Demo extends React.Component {
       '',
     );
     const html = `<div id="container" style="padding: 24px"></div>
-<script>
-  var mountNode = document.getElementById('container');
-</script>`;
+
+    <script>
+      var mountNode = document.getElementById('container');
+    </script>`;
 
     const sourceCode = this.getSourceCode();
 
